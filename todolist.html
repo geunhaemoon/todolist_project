@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+<meta charset = "UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> 근해의 오늘의 할 일 </title>
+
+<!--CSS 연동-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/root.css">
+<link rel="stylesheet" href="/css/side.css">
+
+
+</head>
+
+<body>
+    <div class="root">
+        <div class="container">          
+            <!-- 메뉴 -->
+            <aside class="side-container">
+                <ul class="sidemenu-container">
+                    <li class="menu-btn home">
+                        <i class="fa-solid fa-house-chimney"> HOME </i>
+                    </li>
+                    <li class="menu-btn todolist">
+                        <i class="fa-solid fa-paper-plane"> LIST </i>
+                    </li>
+                    <li class="sub-menu invisible">
+                        <aside class="sub-side-container">
+                            <ul class="sidemenu-container">
+                                <li class="menu-btn incomplete">
+                                    <i class="fa-regular fa-calendar"> INCOMPLETE </i>
+                                </li>
+                                <li class="menu-btn complete">
+                                    <i class="fa-regular fa-calendar-check"> COMPLETE </i>
+                                </li>
+                                <li class="menu-btn calendar">
+                                    <i class="fa-regular fa-calendar-days"> CALENAR </i>
+                                </li>
+                            </ul>
+                        </aside>
+                    </li>
+                </ul>
+            </aside>
+            
+
+            <!-- 메인 화면 -->
+            <main class="main-board-container ">
+
+    
+                <!-- 리스트 메인화면 -->
+                <div class="todolist-home-container">
+    
+                </div>
+    
+                <!-- 할 일 -->
+                <div class="todolist-container">
+                    
+                </div>
+    
+                <!-- 미완료 -->
+                <div class="todolist-incomplete-container">
+                    
+                </div>
+                
+                <!-- 완료된 -->
+                <div class="todolist-complete-container">
+    
+                </div>
+
+                <!-- 달력 -->
+                <div class="calendar-container">
+    
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+</body>
+</html>
