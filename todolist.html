@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="./css/reset.css">
 <link rel="stylesheet" href="./css/root.css">
 <link rel="stylesheet" href="/css/side.css">
+<link rel="stylesheet" href="./css/list.css">
+<link rel="stylesheet" href="./css/home.css">
 
 
 </head>
@@ -26,13 +28,13 @@
             <aside class="side-container">
                 <ul class="sidemenu-container">
                     <li class="menu-btn home">
-                        <i class="fa-solid fa-house-chimney"> HOME </i>
+                        <i class="fa-solid fa-house-chimney" onclick=""> HOME </i>
                     </li>
-                    <li class="menu-btn todolist">
-                        <i class="fa-solid fa-paper-plane"> LIST </i>
+                    <li class="menu-btn list">
+                        <i class="fa-solid fa-paper-plane" onclick=""> LIST </i>
                     </li>
-                    <li class="sub-menu invisible">
-                        <aside class="sub-side-container">
+                    <li class="sub-menu">
+                        <aside class="sub-side-container  sub-menu-close">
                             <ul class="sidemenu-container">
                                 <li class="menu-btn incomplete">
                                     <i class="fa-regular fa-calendar"> INCOMPLETE </i>
@@ -54,23 +56,24 @@
             <main class="main-board-container ">
 
     
-                <!-- 리스트 메인화면 -->
-                <div class="todolist-home-container">
-    
+                <!-- 리스트 홈화면 -->
+                <div class="home-container">
+                    <div class="home-title"> TODOLIST </div>
+                    
                 </div>
     
-                <!-- 할 일 -->
-                <div class="todolist-container">
+                <!-- 리스트 작성 & 전체보기 -->
+                <div class="list-container">
                     
                 </div>
     
                 <!-- 미완료 -->
-                <div class="todolist-incomplete-container">
+                <div class="incomplete-container">
                     
                 </div>
                 
                 <!-- 완료된 -->
-                <div class="todolist-complete-container">
+                <div class="complete-container">
     
                 </div>
 
@@ -83,5 +86,8 @@
 
         </div>
     </div>
+
+
+    <script src="./js/side.js"> </script>
 </body>
 </html>

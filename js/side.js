@@ -1,4 +1,8 @@
-const sidemenuToggleButtonOnClickHandle = () => {
-    const subMenu = document.querySelector(".sub-menu");
-    const sidemenuToggleButton = document.querySelector(".menu-btn todolist");
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const subSideContainer = document.querySelector(".sub-side-container");
+    const listMenu = document.querySelector(".list");
+  
+  listMenu.addEventListener("click", function () {
+      subSideContainer.classList.toggle("sub-menu-close");
+  });
+});

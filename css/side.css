@@ -12,12 +12,17 @@
     position: relative;
     width: 200px;
     height: 40%;
+    transition: all 1s ease;
+    top: 0;
+}
+
+.sub-menu-close {
+    top: -150px;
 }
 
 .sidemenu-container{
     margin: 0px 0px;
 }
-
 
 .menu-btn{
     cursor: pointer;
@@ -54,5 +59,10 @@
 
 .sub-menu .menu-btn > i {
     font-size: 14px;
+}
+
+.sub-menu{
+    position: relative;
+    overflow: hidden;
 }
 
