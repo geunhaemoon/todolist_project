@@ -1,0 +1,37 @@
+/* 모달 배경 스타일 */
+.modal-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* 반투명한 블랙 배경 */
+    z-index: 1;
+    /* 모달보다 아래에 위치하도록 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 모달 창 스타일 */
+.modal-content {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 400px;
+    /* 모달 창의 최대 너비 */
+    position: relative;
+    /* 모달 창을 중앙에 위치시킴 */
+    z-index: 2;
+    /* 모달 창을 모달 배경 위에 띄움 */
+}
+
+/* 닫기 버튼 스타일 */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
